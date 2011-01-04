@@ -5,8 +5,8 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "capsh"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{Capistrano shell}
+    gem.description = %Q{Capistrano shell}
     gem.email = "kmaxwell@twitter.com"
     gem.homepage = "http://github.com/fizx/capsh"
     gem.authors = ["Kyle Maxwell"]

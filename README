@@ -1,0 +1,3 @@
+Capistrano shell, as a standalone thing
+
+:$ capsh server1 server2 ... 
