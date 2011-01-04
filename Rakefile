@@ -10,7 +10,7 @@ begin
     gem.email = "kmaxwell@twitter.com"
     gem.homepage = "http://github.com/fizx/capsh"
     gem.authors = ["Kyle Maxwell"]
-    gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
+    gem.add_dependency "capistrano", "2.5.19"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new

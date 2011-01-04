@@ -1,0 +1,20 @@
+#!/usr/bin/env ruby
+require "rubygems"
+require "capistrano"
+require "capistrano/shell"
+
+module Ext
+  def current_task
+    super || task_list(true).first
+  end
+end
+
+cfg = Capistrano::Configuration.new
+cfg.role :app, *ARGV 
+cfg.task :hello do
+end
+
+cfg.extend(Ext)
+
+Capistrano::Shell.run(cfg)
+
