@@ -11,21 +11,26 @@ Gem::Specification.new do |s|
   s.authors = ["Kyle Maxwell"]
   s.date = %q{2011-01-04}
   s.default_executable = %q{capsh}
-  s.description = %q{TODO: longer description of your gem}
+  s.description = %q{Capistrano shell}
   s.email = %q{kmaxwell@twitter.com}
   s.executables = ["capsh"]
+  s.extra_rdoc_files = [
+    "README"
+  ]
   s.files = [
     ".document",
      ".gitignore",
+     "README",
      "Rakefile",
      "VERSION",
-     "bin/capsh"
+     "bin/capsh",
+     "capsh.gemspec"
   ]
   s.homepage = %q{http://github.com/fizx/capsh}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.6}
-  s.summary = %q{TODO: one-line summary of your gem}
+  s.summary = %q{Capistrano shell}
 
   if s.respond_to? :specification_version then
     current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
