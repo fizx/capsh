@@ -10,7 +10,17 @@ module Ext
 end
 
 cfg = Capistrano::Configuration.new
-cfg.role :app, *ARGV 
+cfg.set :ssh_options, { :forward_agent => true, :auth_methods => "publickey" }
+
+hosts = ARGV.reject{|a| a.include?("=") }
+
+ARGV.select{|a| a.include?("=") }.each do |flag|
+  if flag =~ /--(.*)=(.*)/
+    cfg.set $1.to_sym, $2
+  end
+end
+
+cfg.role :app, *hosts
 cfg.task :hello do
 end
 
