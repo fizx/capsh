@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{capsh}
-  s.version = "0.1.0"
+  s.version = "0.2.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Kyle Maxwell"]
-  s.date = %q{2011-01-04}
+  s.date = %q{2011-01-30}
   s.default_executable = %q{capsh}
   s.description = %q{Capistrano shell}
   s.email = %q{kmaxwell@twitter.com}
